@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, aqua, rgb(0, 0, 0), aqua);
+}
+
+header {
+    background-color: #000000;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.logo img:hover{
+    box-shadow: 4px 4px 10px rgb(255, 242, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+.account img {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.cart img {
+    height: 50px; /* Increased size */
+    width: 50px; /* Adjust as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.cart:hover {
+    box-shadow: 5px 5px 10px yellow; /* Yellow shadow with offset to the bottom right */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: aqua;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background: linear-gradient(to right, rgb(31, 120, 236), #d1ce0d);
+    box-shadow: 5px 5px 5px yellowgreen;
+}
+
+.tabs button.active {
+    background: linear-gradient(to right, aqua, #28ed0e);
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    border-color: aqua;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: aqua;
+}
+
+small {
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+select {
+    color: white;
+    background-color: linear-gradient(to right, aqua, rgb(0, 0, 0), aqua);
+}
+
+select option {
+    background-color: black; /* Option background color */
+    color: aqua; /* Option text color */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, rgb(31, 120, 236), #d1ce0d);
+    box-shadow: 5px 5px 5px yellowgreen;
+}
+
+select option:disabled {
+    color: #aaa;
+}
+
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-top: 0px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    margin-top: 5px;
+}
+
+.search-bar input:hover{
+    box-shadow: 4px 4px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+
+.search-bar button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+    cursor: pointer;
+    font-size: large;
+    margin-left: 0px;
+    margin-top: -4px;
+}
+
+.search-bar button:hover {
+    background: linear-gradient(to right, rgb(31, 120, 236), #d1ce0d);
+    box-shadow: 5px 5px 5px yellowgreen;
+}
+
+.search-bar button.active {
+    background: linear-gradient(to right, aqua, #28ed0e);
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    border-color: aqua;
+}

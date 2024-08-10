@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light grey background for better readability */
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.logo img:hover {
+    box-shadow: 4px 4px 10px rgb(255, 242, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar input:hover {
+    box-shadow: 4px 4px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+    box-shadow: 4px 4px 10px rgb(0, 215, 248); /* Yellow shadow with offset to the bottom right */
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+.account img {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.cart img {
+    height: 50px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+}
+
+.cart:hover {
+    box-shadow: 5px 5px 10px yellow; /* Yellow shadow with offset to the bottom right */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: rgb(249, 249, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #007bff; /* Primary color for the navigation background */
+    border-radius: 10px; /* Rounded corners for a smooth look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff; /* White text color for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    display: block;
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(240, 101, 8, 0.1);
+    box-shadow: 4px 4px 10px rgb(240, 3, 3); /* Red shadow with offset to the bottom right */
+}
+
+/* Personal Info and Address Section Styles */
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#primary-address-section p,
+#other-addresses p {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #e1e4e8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#other-addresses h2 {
+    margin-top: 30px;
+}
+
+/* Additional styling for better visuals */
+section#personal-info p {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#personal-info p span {
+    font-weight: bold;
+    color: #333;
+}
+
+section#personal-info p span::after {
+    content: '';
+    margin-right: 5px;
+}
+
+section#primary-address-section,
+section#other-addresses {
+    margin-top: 30px;
+}
+
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #fefefe; */
+    background: whitesmoke;
+    /* background: linear-gradient(to right, #21e4eb, #9ee70d, #21e4eb); */
+}
+
+header {
+    background-color: #000000;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.logo img:hover{
+    box-shadow: 4px 4px 10px rgb(255, 242, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar input:hover{
+    box-shadow: 4px 4px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+
+    box-shadow: 4px 4px 10px rgb(0, 215, 248); /* Yellow shadow with offset to the bottom right */
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+.account img {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.cart img {
+    height: 50px; /* Increased size */
+    width: 50px; /* Adjust as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.cart:hover {
+    box-shadow: 5px 5px 10px yellow; /* Yellow shadow with offset to the bottom right */
+}
+
+
+
+.product-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 65px;
+}
+
+.image-gallery img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.image-gallery img:hover {
+    transform: perspective(1000px) translateZ(50px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.main-image-container {
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    border: 1px solid aqua;
+    margin-right: 180px;
+    margin-top: 30px;
+}
+
+.main-image-container img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.image-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#prev-image {
+    left: 95px;
+    background: transparent;
+}
+
+#next-image {
+    right: 870px;
+    background: transparent;
+}
+
+#add-to-cart,
+#wishlist {
+    font-weight: bold;
+    width: 300px;
+    padding: 10px;
+    /* background: #f4cc06;
+    color: white; */
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #000000;
+    font-size: large;
+    margin-block-end: 5px;
+}
+
+#wishlist:hover,
+#add-to-cart:hover {
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+}
+
+#wishlist:hover.selected,
+#add-to-cart:hover.selected {
+    color: aqua;
+    background-color: rgb(0, 0, 0);
+}
+
+.hidden {
+    display: none; /* This will completely remove the element from the layout */
+    /* Alternatively, use visibility: hidden; if you want the element to occupy space but not be visible */
+    /* visibility: hidden; */
+}
+
+.product-details {
+    max-width: 600px;
+}
+
+.product-details h2#brand-name {
+    font-weight: bold;
+    color: rgb(183, 183, 183);
+}
+
+.product-details h3#product-name {
+    margin: 10px 0;
+    margin-bottom: 5px;
+}
+
+.product-details #discounted-price {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(246, 242, 242);
+}
+
+.product-details #original-price {
+    text-decoration: line-through;
+    color: rgb(50, 50, 50);
+    margin-left: 10px;
+}
+
+.product-details #discount-percentage {
+    color: rgb(18, 220, 18);
+    margin-left: 10px;
+}
+
+.product-details #sizes span {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.product-details #sizes span.selected {
+    color: aqua;
+    background-color: rgb(0, 0, 0);
+}
+
+.product-details #return-status {
+    padding-top: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.product-details h4 {
+    margin-top: 20px;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.product-details p span {
+    font-weight: normal;
+}

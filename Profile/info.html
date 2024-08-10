@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info - Genzzshop</title>
+    <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for products...">
+                <button id="search-btn">Search</button>
+            </div>
+            <a href="profile.html" class="account">
+                <img src="/images/user.png" alt="User">
+                <span id="user-greeting"></span>
+            </a>
+            <a href="cart.html" class="cart">
+                <img src="/images/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    
+
+    <nav class="navigation">
+        <a href="#personal-info">Personal Info</a>
+        <a href="#order-info">Order Info</a>
+        <a href="#wishlist">Wishlist</a>
+        <a href="#old-orders">Old Orders</a>
+        <a href="#" id="logout-link">Log Out</a>
+    </nav>
+
+    <section id="personal-info">
+        <h2>Personal Info</h2>
+        <p>Name: <span id="user-name"></span></p>
+        <p>Mobile Number: <span id="user-mobile"></span></p>
+        <p>Email: <span id="user-email"></span></p>
+        <p>Gender: <span id="user-gender"></span></p>
+    </section>
+
+    <section id="primary-address-section">
+        <h2>Primary Address</h2>
+        <p id="primary-address"></p>
+    </section>
+
+    <section id="other-addresses">
+        <h2>Other Addresses</h2>
+        <!-- Other addresses will be dynamically added here -->
+    </section>
+
+    <footer>
+        &copy; 2024 Genzzshop. All rights reserved.
+    </footer>
+
+    <script src="/js/info.js"></script>
+</body>
+</html>

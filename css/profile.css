@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, aqua, rgb(0, 0, 0), aqua);
+}
+
+header {
+    background-color: #000000;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.logo img:hover{
+    box-shadow: 4px 4px 10px rgb(255, 242, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar input:hover{
+    box-shadow: 4px 4px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+
+    box-shadow: 4px 4px 10px rgb(0, 215, 248); /* Yellow shadow with offset to the bottom right */
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+.account img {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.cart img {
+    height: 50px; /* Increased size */
+    width: 50px; /* Adjust as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.cart:hover {
+    box-shadow: 5px 5px 10px yellow; /* Yellow shadow with offset to the bottom right */
+}
+
+.profile-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: aqua;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profile-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+    cursor: pointer;
+    font-size: large;
+}
+
+.tabs button:hover {
+    background: linear-gradient(to right, rgb(31, 120, 236), #d1ce0d);
+    box-shadow: 5px 5px 5px yellowgreen;
+}
+
+.tabs button.active {
+    background: linear-gradient(to right, aqua, #28ed0e);
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    border-color: aqua;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.form {
+    display:grid;
+}
+
+.form.hidden {
+    display: none;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #007bff;
+}
+
+#login-form {
+    width: 40%;
+}
+
+#login-button {
+    width : 106%;
+    background: transparent;
+    border: 1px solid aqua;
+    font-weight: bold;
+    font-size: large;
+}
+
+#login-button:hover {
+    background: linear-gradient(to right, aqua, #28ed0e);
+    color: #000000;
+}
+
+
+
+
+.input-row {
+    display: flex; /* Arrange children in a row */
+    margin-bottom: 5px; /* Space between rows */
+}
+
+input[type="date"],
+.input-row input {
+    flex: 1; /* Each input takes up equal space */
+    margin-right: 10px; /* Space between inputs */
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    color : aqua;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+
+
+
+input::placeholder {
+    color: aqua;
+    opacity: 1;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#user-greeting {
+    font-size: 16px; /* Adjust as needed */
+    color: #333; /* Adjust color as needed */
+    font-weight: bold;
+    display: inline-block; /* Ensure it is inline with the image */
+    margin-left: 10px; /* Space between image and text */
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: yellow;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #f29f05, #28ed0e);
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+

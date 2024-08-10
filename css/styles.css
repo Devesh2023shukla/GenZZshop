@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.logo img:hover{
+    box-shadow: 4px 4px 10px rgb(255, 242, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar input:hover{
+    box-shadow: 4px 4px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+
+    box-shadow: 4px 4px 10px rgb(0, 215, 248); /* Yellow shadow with offset to the bottom right */
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+.account img {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.cart img {
+    height: 50px; /* Increased size */
+    width: 50px; /* Adjust as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgb(166, 255, 0); /* Yellow shadow with offset to the bottom right */
+}
+
+.cart:hover {
+    box-shadow: 5px 5px 10px yellow; /* Yellow shadow with offset to the bottom right */
+}
+
+nav.main-nav {
+    margin-top: 15px;
+    padding: 10px 20px; /* Reduced padding */
+    border-top: 1px solid #e1e4e8;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for a smooth look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Blurring effect for the background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for a frosted look */
+    color: aqua;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 3px; /* Reduced margin */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+.nav-item img {
+    height: 50px; /* Reduced size */
+    width: 50px; /* Reduced size */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-item:hover {
+    box-shadow: 4px 4px 10px rgb(0, 255, 255); /* Yellow shadow with offset to the bottom right */
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+}
+
+.nav-item span {
+    display: block;
+    margin-top: 3px; /* Reduced space */
+    font-size: 12px; /* Reduced font size */
+}
+
+
+/* Hover effect for the nav container */
+.nav-container:hover {
+    box-shadow: 4px 4px 10px rgba(255, 255, 0, 0.7); /* Yellow shadow with offset to the bottom right */
+}

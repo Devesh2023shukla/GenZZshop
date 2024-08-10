@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="\index.html"><div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div></a>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for products...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="account">
+                <img src="/images/india.png" alt="User">
+            </div>
+            <a href="profile.html"> <div class="account">
+                <img src="/images/user.png" alt="User">
+            </div> </a>
+            <div class="cart">
+                <img src="/images/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-page">
+        <div class="image-gallery">
+            <!-- Reference images will be dynamically inserted here -->
+        </div>
+        <div class="main-image-container">
+            <button id="prev-image" class="image-nav">&lt;</button>
+            <img id="main-image" src="" alt="Product Image">
+            <button id="next-image" class="image-nav">&gt;</button>
+            <form method="post" action="" name="cart-form">
+                <div class="hidden">
+                    <input type="email" name="email">
+                    <input type="text" name="productId">
+                    <input type="text" name="productSize">
+                </div>
+                <input type="submit" value="ADD TO CART" id="add-to-cart">
+                <input type="submit" value="Add To WishList" id="wishlist">
+                <!-- <a><button id="add-to-cart">ADD TO CART</button></a> -->
+                <!-- <a><button id="wishlist">Add To WishList</button></a> -->
+            </form>
+
+        </div>
+
+        <div class="product-details">
+            <h2 id="brand-name">Brand Name</h2>
+            <h3 id="product-name">Product Name</h3>
+            <p id="price">
+                <span id="discounted-price">₹0</span>
+                <span id="original-price">₹0</span>
+                <span id="discount-percentage">0% off</span>
+            </p>
+            <p id="sizes">Sizes: <span id="available-sizes"></span></p>
+            <p id="stock-status">Stock Status: In Stock</p>
+            <p id="return-status">Return Status: </p>
+            <h4>Description</h4>
+            <p>Product Name: <span id="desc-product-name"></span></p>
+            <p>Color: <span id="desc-color"></span></p>
+            <p>Sizes: <span id="desc-sizes"></span></p>
+            <p>Fabric: <span id="desc-fabric"></span></p>
+            <p>Type: <span id="desc-type"></span></p>
+            <p>Pattern: <span id="desc-pattern"></span></p>
+            <p>Sleeve Length: <span id="desc-sleeve-length"></span></p>
+            <p>Net Quantity: <span id="desc-net-quantity"></span></p>
+        </div>
+
+    </div>
+
+    <script src="/Women/Gown/product.js"></script>
+</body>
+</html>

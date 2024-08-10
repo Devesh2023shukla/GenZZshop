@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+
+	<header>
+        <div class="header-container">
+            <a href="index.html"><div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div></a>
+            <div class="search-bar" id="nsearch">
+                <input type="text" id="search" placeholder="Search for products...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="account">
+                <img src="/images/india.png" alt="User">
+            </div>
+            <a href="/Profile/profile.html"> <div class="account">
+                <img src="/images/user.png" alt="User">
+            </div> </a>
+            <a href="cart.html"><div class="cart">
+                <img src="/images/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </div></a>
+        </div>
+    </header>
+	
+	<div class="container">
+
+        <div class="tabs">
+            <button id="login-tab" onclick="window.location.href='profile.html'" >Login</button>
+            <button id="signup-tab" onclick="window.location.href='signup.html'" >Sign Up</button>
+        </div>
+
+		<form method="post" action="" name="contact-form">
+
+			<!-- <input type="text" name="your-name" placeholder="Name"> -->
+
+			<input type="text" id="signup-name" name="signup-name" placeholder="Full Name" required>
+            <!-- <input type="text" id="signup-surname" name="signup-surname" placeholder="SurName" required> -->
+
+			
+			
+			<!-- <input type="text" name="your-number" placeholder="Number"> -->
+			
+			<input type="text" id="signup-mobile" name="signup-mobile" placeholder="Mobile Number" required>
+            <!-- <small>We know you are Proud Indian so please don't include +91</small> -->
+
+			<input type="text" id="signup-reenter-mobile" name="signup-reenter-mobile" placeholder="Re-enter Mobile Number" required>
+
+
+			<!-- <input type="text" name="your-email" placeholder="Email"> -->
+
+			<input type="email" id="signup-email" name="signup-email" placeholder="Email ID" required>
+			<input type="email" id="signup-reenter-email" name="signup-reenter-email" placeholder="Re-enter Email ID" required>
+
+
+			<!-- <textarea type="text" name="message" rows="7" placeholder="Your Message..."></textarea> -->
+
+			<input type="date" id="signup-password" name="signup-password" placeholder="Password : DOB" required>
+            <small>Your Date of Birth will be your password.</small>
+			<input type="date" id="signup-reenter-password" name="signup-reenter-password" placeholder="Re-enter Password : DOB" required>
+
+			<input type="text" id="signup-pin" name="signup-pin" placeholder="Pin Code" required>
+			<select id="signup-gender" name="signup-gender">
+				<option value="" disabled selected>Gender</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+			</select>
+
+			<input type="text" id="signup-address" name="signup-address" placeholder="Complete Address" required>
+
+			<input type="text" id="signup-city" name="signup-city" placeholder="City" required>
+			<select id="signup-state" name="signup-state">
+				<!-- Dropdown options for states should be filled here -->
+				<option value="" disabled selected>State</option>
+				<option value="Andhra Pradesh">Andhra Pradesh</option>
+				<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+				<option value="Assam">Assam</option>
+				<option value="Bihar">Bihar</option>
+				<option value="Chhattisgarh">Chhattisgarh</option>
+				<option value="Goa">Goa</option>
+				<option value="Gujarat">Gujarat</option>
+				<option value="Haryana">Haryana</option>
+				<option value="Himachal Pradesh">Himachal Pradesh</option>
+				<option value="Jharkhand">Jharkhand</option>
+				<option value="Karnataka">Karnataka</option>
+				<option value="Kerala">Kerala</option>
+				<option value="Madhya Pradesh">Madhya Pradesh</option>
+				<option value="Maharashtra">Maharashtra</option>
+				<option value="Manipur">Manipur</option>
+				<option value="Meghalaya">Meghalaya</option>
+				<option value="Mizoram">Mizoram</option>
+				<option value="Nagaland">Nagaland</option>
+				<option value="Odisha">Odisha</option>
+				<option value="Punjab">Punjab</option>
+				<option value="Rajasthan">Rajasthan</option>
+				<option value="Sikkim">Sikkim</option>
+				<option value="Tamil Nadu">Tamil Nadu</option>
+				<option value="Telangana">Telangana</option>
+				<option value="Tripura">Tripura</option>
+				<option value="Uttar Pradesh">Uttar Pradesh</option>
+				<option value="Uttarakhand">Uttarakhand</option>
+				<option value="West Bengal">West Bengal</option>
+			</select>
+
+
+			<input type="text" id="signup-landmark" name="signup-landmark" placeholder="Landmark (Optional)">
+			<input type="text" id="signup-alternate-phone" name="signup-alternate-phone"  placeholder="Alternate Phone (Optional)">
+
+
+
+			<input class="tabs" type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+	<script src="/js/signup.js"></script>
+</body>
+</html>

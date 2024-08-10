@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div></a>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for products...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="account">
+                <img src="images/india.png" alt="User">
+            </div>
+            <a href="/Profile/profile.html"> <div class="account">
+                <img src="images/user.png" alt="User">
+            </div> </a>
+            <a href="cart.html"><div class="cart">
+                <img src="images/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </div></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Left Part -->
+        <div class="left-part">
+            <!-- Address Info -->
+            <div id="address-info">
+                <div>
+                    <b>Deliver To:</b> 
+                    <span id="user-name"></span>, <span id="pin-code"></span>
+                </div>
+                <div>
+                    <span id="complete-address"></span>
+                </div>
+                <button id="change-address-btn">Change</button>
+            </div>
+
+            <!-- Cart Items -->
+            <div id="cart-items"></div>
+        </div>
+
+        <!-- Right Part -->
+        <div class="right-part">
+            <h2>PRICE DETAILS</h2>
+            <div id="price-details"></div>
+            <button id="place-order-btn">PLACE ORDER</button>
+            <div id="secure-payment">
+                <img src="/images/ssecurity.png" alt="Secure Payment">
+                <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
